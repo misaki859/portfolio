@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/* リセット */
+html,
+body,
+header,
+footer,
+main,
+section,
+h1,
+h2,
+h3,
+ul,
+li,
+p,
+dl,
+div {
+  margin: 0;
+  padding: 0;
+  /*フォントサイズ＝行高*/
+  line-height: 1;
+  /*全体のフォントカラー*/
+  color: #4f260b;
+  font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+    "ＭＳ 明朝", serif;
+  /*メトリクス*/
+  font-feature-settings: "palt";
+  /*paddingをwidthの中に含める*/
+  box-sizing: border-box;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  width: 100%;
+/*スキマ防止*/
+  vertical-align: bottom;
+/*ボーダーが勝手に入らないように*/
+  border: none;
+}
