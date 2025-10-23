@@ -72,15 +72,15 @@ main-visual
 .mv__text--top {
   font-size: 20px;
   color: #2e659e;
-  top: 50px;
+  top: 10%;
   left: 10%;
 }
 .mv__text--middle {
-  top: 100px;
+  top: 25%;
   left: 10%;
 }
 .mv__text--bottom {
-  top: 100px;
+  top: 25%;
   right: 10%;
 }
 /* キャッチコピー */
@@ -485,65 +485,22 @@ h2 img {
     margin-bottom: 58px;
   }
 
-  /* Menu: 3カラム→縦並び */
-  .menu-list {
+  /* Works: 3カラム→縦並び */
+  .works-list {
     flex-direction: column;
     align-items: center;
   }
 
-  .menu-item {
-    width: 100%;
-  }
-  .menu-item h3 {
-    font-size: 40px;
-    margin: -8px 10px;
-  }
-  .menu-item p {
-    font-size: 17px;
-    line-height: 1.588;
-    margin: 22px 0 73px;
-  }
-
-  /* Gallery */
+  /* Skill */
   .gallery-list img {
     max-width: 100%;
     object-fit: cover;
     margin-bottom: 10px;
   }
 
-  /* Event: 日付とテキストを縦に */
-  .event h2 {
-    margin: 33px 0 20px;
-  }
-
-  .event-list {
-    padding: 28px 10%;
-  }
-  .event-list li {
-    display: block;
-    font-size: 16px;
-    gap: 5px;
-    margin-bottom: 28px;
-  }
-  .event-list a {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    border-bottom: 2px solid #4f260b;
-  }
-
-  .event-item-ttl {
-    display: flex;
-  }
-
-  /* Access */
-  .access h2 {
+  /* Contact */
+  .contact h2 {
     margin: 32px 0 10px;
-  }
-  .map iframe {
-    height: auto;
-    width: 100%;
-    aspect-ratio: 2/1;
   }
 
   /* Footer: 縦並び */

@@ -17,48 +17,32 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <!-- 「Topへ」ボタンで飛ばせるように -->
-    <header id="header">
+  <body id="header"><!-- 「Topへ」ボタンで飛ばせるように -->
+    <!-- ヘッダー -->
+    <header>
       <!-- navigationその他の部分 -->
       <div class="header_inner">
         <!-- navigationの部分 -->
         <nav class="header_nav">
-          <!-- リスト形式にしたいのでulタグ -->
+          <!-- リスト形式(ul)にして遷移(a) -->
           <ul>
-            <li>
-              <!-- ボタンにして遷移させたいのでaタグ -->
-              <a href="#about">ABOUT</a>
-            </li>
-            <li>
-              <a href="#works">WORKS</a>
-            </li>
-            <li>
-              <a href="#skill">SKILL</a>
-            </li>
-            <li>
-              <a href="#contact">CONTACT</a>
-            </li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#works">WORKS</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
+        <!-- ハンバーガーメニュー -->
         <div class="hambuger">
           <span></span>
         </div>
         <nav class="header_nav-sp">
+          <!-- リスト形式(ul)にして遷移(a) -->
           <ul>
-            <li>
-              <!-- ボタンにして遷移させたいのでaタグ -->
-              <a href="#about">ABOUT</a>
-            </li>
-            <li>
-              <a href="#works">WORKS</a>
-            </li>
-            <li>
-              <a href="#skill">SKILL</a>
-            </li>
-            <li>
-              <a href="#contact">CONTACT</a>
-            </li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#works">WORKS</a></li>
+            <li><a href="#skill">SKILL</a></li>
+            <li><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </div>
@@ -73,127 +57,156 @@
         </picture>
       </div>
     </header>
-
+    <!-- ヘッダーここまで -->
+    <!-- メイン -->
     <main class="main">
       <div class="container"></div>
-    </main>
 
-    <!-- Concept -->
-    <section class="hero">
-      <div class="concept__inner">
-        <h2><img src="./images/concept.png" alt="CONCEPT" /></h2>
-        <div class="concept__colums">
-          <div class="hero-content wrapper">
-            <img src="./images/lightroom1.png" alt="灯台1" />
-            <img src="./images/lightroom2.png" alt="灯台2" />
-            <img src="./images/lightroom3.png" alt="灯台3" />
-          </div>
-          <div class="concept__text-area">
-            <p class="hero-text-main">
-              岬に立つ灯台のように、<br />嵐の中たどり着いた安心できる場所。<br />いつもそこにいて、<br />暖かく照らして導いてくれる存在。
-            </p>
-            <p class="hero-text-sentence">
-              灯台は、どんな天気の日も変わらずに光を放ち、迷う船を安心へと導きます。私もWEBデザイナーとして、そんな存在でありたいと考えています。サイトを訪れる人が迷わず進めるように、シンプルで使いやすく、心地よさを感じられるデザインを大切にしています。見た目の美しさだけでなく、目的へたどり着くためのわかりやすい導線、安心感を与える雰囲気づくりを心がけています。依頼してくださる方にとっても、訪れるユーザーにとっても、いつもそこにあり続け、温かく照らす灯台のような存在でいたい。<br />――それが私の目指すWEBデザイナーです。
-            </p>
+      <!-- Concept -->
+      <section class="hero">
+        <div class="concept__inner">
+          <h2><img src="./images/concept.png" alt="CONCEPT" /></h2>
+          <div class="concept__colums">
+            <div class="hero-content wrapper">
+              <img src="./images/lightroom1.png" alt="灯台1" />
+              <img src="./images/lightroom2.png" alt="灯台2" />
+              <img src="./images/lightroom3.png" alt="灯台3" />
+            </div>
+            <div class="concept__text-area">
+              <p class="hero-text-main">
+                岬に立つ灯台のように、<br />嵐の中たどり着いた安心できる場所。<br />いつもそこにいて、<br />暖かく照らして導いてくれる存在。
+              </p>
+              <p class="hero-text-sentence">
+                灯台は、どんな天気の日も変わらずに光を放ち、迷う船を安心へと導きます。私もWEBデザイナーとして、そんな存在でありたいと考えています。サイトを訪れる人が迷わず進めるように、シンプルで使いやすく、心地よさを感じられるデザインを大切にしています。見た目の美しさだけでなく、目的へたどり着くためのわかりやすい導線、安心感を与える雰囲気づくりを心がけています。依頼してくださる方にとっても、訪れるユーザーにとっても、いつもそこにあり続け、温かく照らす灯台のような存在でいたい。<br />――それが私の目指すWEBデザイナーです。
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- About -->
-    <section id="about" class="about">
-      <div class="about-content wrapper">
-        <img src="./images/about.png" alt="写真" />
-        <div class="about-text">
+      <!-- About -->
+      <section id="about" class="about">
+        <div class="about-content wrapper">
+          <img src="./images/about.png" alt="写真" />
+          <div class="about-text">
+            <h2><img src="./images/about_1.png" alt="ABOUT" /></h2>
+            <p>
+              当ポートフォリオサイトをご覧いただき、ありがとうございます。<br />見る人が安心できて、ちょっとワクワクするデザインを心がけています。見やすくて使いやすいことはもちろん、訪れる人が気持ちよく過ごせるような雰囲気を大切にしています。ご依頼いただく方にとっても、ユーザーにとっても『ここなら大丈夫』と思ってもらえるように、寄り添いながらデザインを形にしていきます。
+            </p>
+            <button type="button" onclick="location.href='about.html'">View More</button>
+          </div>
+        </div>
+
+        <div class="about-content-sp">
           <h2><img src="./images/about_1.png" alt="ABOUT" /></h2>
-          <p>
-            当ポートフォリオサイトをご覧いただき、ありがとうございます。<br />見る人が安心できて、ちょっとワクワクするデザインを心がけています。見やすくて使いやすいことはもちろん、訪れる人が気持ちよく過ごせるような雰囲気を大切にしています。ご依頼いただく方にとっても、ユーザーにとっても『ここなら大丈夫』と思ってもらえるように、寄り添いながらデザインを形にしていきます。
-          </p>
+          <img src="./images/about.png" alt="写真" />
+          <div class="about-text wrapper">
+            <p>
+              当ポートフォリオサイトをご覧いただき、ありがとうございます。見る人が安心できて、ちょっとワクワクするデザインを心がけています。見やすくて使いやすいことはもちろん、訪れる人が気持ちよく過ごせるような雰囲気を大切にしています。ご依頼いただく方にとっても、ユーザーにとっても『ここなら大丈夫』と思ってもらえるように、寄り添いながらデザインを形にしていきます。
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div class="about-content-sp">
-        <h2><img src="./images/about_1.png" alt="ABOUT" /></h2>
-        <img src="./images/about.png" alt="写真" />
-        <div class="about-text wrapper">
-          <p>
-            当ポートフォリオサイトをご覧いただき、ありがとうございます。見る人が安心できて、ちょっとワクワクするデザインを心がけています。見やすくて使いやすいことはもちろん、訪れる人が気持ちよく過ごせるような雰囲気を大切にしています。ご依頼いただく方にとっても、ユーザーにとっても『ここなら大丈夫』と思ってもらえるように、寄り添いながらデザインを形にしていきます。
-          </p>
+      <!-- Works -->
+      <section id="works" class="works">
+        <h2 class="ttl--bubble">
+          <img src="./images/works_1.png" alt="WORKS" />
+        </h2>
+        <div class="works-list">
+          <picture>
+            <source
+              srcset="./images/works1-100.jpg"
+              media="(max-width:768px)"
+            />
+            <img src="./images/works1-100.jpg" alt="アイス" />
+          </picture>
+          <picture>
+            <source
+              srcset="./images/works2-100.jpg"
+              media="(max-width:768px)"
+            />
+            <img src="./images/works2-100.jpg" alt="美容院" />
+          </picture>
+          <picture>
+            <source
+              srcset="./images/works3-100.jpg"
+              media="(max-width:768px)"
+            />
+            <img src="./images/works3-100.jpg" alt="ドッグカフェ" />
+          </picture>
+          <picture>
+            <source
+              srcset="./images/works4-100.jpg"
+              media="(max-width:768px)"
+            />
+            <img src="./images/works4-100.jpg" alt="カフェ" />
+          </picture>
         </div>
-      </div>
-    </section>
+        <button type="button" onclick="location.href='works.html'">View More</button>
+      </section>
 
-    <!-- Works -->
-    <section id="works" class="works">
-      <h2 class="ttl--bubble">
-        <img src="./images/works_1.png" alt="WORKS" />
-      </h2>
-      <div class="works-list">
-        <picture>
-          <source
-            srcset="./images/mobile_gallery_05-100.jpg"
-            media="(max-width:768px)"
-          />
-          <img src="./images/works1-100.jpg" alt="アイス" />
-        </picture>
-        <picture>
-          <source
-            srcset="./images/mobile_gallery_04-100.jpg"
-            media="(max-width:768px)"
-          />
-          <img src="./images/works2-100.jpg" alt="美容院" />
-        </picture>
-        <picture>
-          <source
-            srcset="./images/mobile_gallery_03-100.jpg"
-            media="(max-width:768px)"
-          />
-          <img src="./images/works3-100.jpg" alt="ドッグカフェ" />
-        </picture>
-        <picture>
-          <source
-            srcset="./images/mobile_gallery_02-100.jpg"
-            media="(max-width:768px)"
-          />
-          <img src="./images/works4-100.jpg" alt="カフェ" />
-        </picture>
-      </div>
-    </section>
+      <!-- Skill -->
+      <section id="skill" class="skill wrapper">
+        <h2 class="ttl--bubble">
+          <img src="./images/skill.png" alt="SKILL" />
+        </h2>
+        <ul class="skill-list">
+          <li class="skill-item">
+            <img src="./images/coding.png" alt="コーディング" />
+            <h3>コーディング</h3>
+            <p>HTML／CSS／JavaScript</p>
+          </li>
+          <li class="skill-item">
+            <img src="./images/design.png" alt="デザイン" />
+            <h3>デザイン</h3>
+            <p>Photoshop／Illustrator</p>
+          </li>
+          <li class="skill-item">
+            <img src="./images/other.png" alt="その他" />
+            <h3>その他</h3>
+            <p>Zoom／ChatWork／Mail</p>
+          </li>
+        </ul>
+      </section>
 
-    <!-- Skill -->
-    <section id="skill" class="skill wrapper">
-      <h2 class="ttl--bubble">
-        <img src="./images/skill.png" alt="SKILL" />
-      </h2>
-      <ul class="skill-list">
-        <li class="skill-item">
-          <img src="./images/coding.png" alt="コーディング" />
-          <h3>コーディング</h3>
-          <p>HTML／CSS／JavaScript</p>
-        </li>
-        <li class="skill-item">
-          <img src="./images/design.png" alt="デザイン" />
-          <h3>デザイン</h3>
-          <p>Photoshop／Illustrator</p>
-        </li>
-        <li class="skill-item">
-          <img src="./images/other.png" alt="その他" />
-          <h3>その他</h3>
-          <p>Zoom／ChatWork／Mail</p>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="contact">
-      <h2>
-        <img src="./images/contact.png" alt="CONTACT" />
-      </h2>
-      <p>お問い合わせは下記のフォームまたはインスタグラムのDMから<br>お気軽にお問い合わせください。ご相談・お見積もり無料です。</p>
-      <div class="contact-form">
-
-      </div>
-    </section>
+      <!-- Contact -->
+      <section id="contact" class="contact">
+        <h2>
+          <img src="./images/contact.png" alt="CONTACT" />
+        </h2>
+        <p>お問い合わせは下記のフォームまたはインスタグラムのDMから<br>お気軽にお問い合わせください。ご相談・お見積もり無料です。</p>
+        <div class="contact-form">
+          <table>
+            <tr>
+              <th>インスタグラム</th>
+              <td>[ @_capescape_ ]</td>
+            </tr>
+            <tr>
+              <th>会社名</th>
+              <td>社名／所属名</td>
+            </tr>
+            <tr>
+              <th>お名前＊</th>
+              <td>山田　太郎</td>
+            </tr>
+            <tr>
+              <th>ふりがな＊</th>
+              <td>やまだ　たろう</td>
+            </tr>
+            <tr>
+              <th>メールアドレス＊</th>
+              <td>odango@aaa.co.jp</td>
+            </tr>
+            <tr>
+              <th>お問い合わせ内容＊</th>
+              <td>お気軽にお問い合わせください</td>
+            </tr>
+          </table>
+        </div>
+        <button type="button" onclick="location.href=''">送信</button>
+      </section>
+    </main>
 
     <!-- フッター -->
     <footer class="footer">
