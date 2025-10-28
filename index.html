@@ -16,8 +16,10 @@
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/xxxxxxx.css">
   </head>
-  <body id="header"><!-- 「Topへ」ボタンで飛ばせるように -->
+  <body id="header">
+    <!-- 「Topへ」ボタンで飛ばせるように -->
     <!-- ヘッダー -->
     <header>
       <!-- navigationその他の部分 -->
@@ -93,7 +95,7 @@
             <p>
               当ポートフォリオサイトをご覧いただき、ありがとうございます。<br />見る人が安心できて、ちょっとワクワクするデザインを心がけています。見やすくて使いやすいことはもちろん、訪れる人が気持ちよく過ごせるような雰囲気を大切にしています。ご依頼いただく方にとっても、ユーザーにとっても『ここなら大丈夫』と思ってもらえるように、寄り添いながらデザインを形にしていきます。
             </p>
-            <button type="button" onclick="location.href='about.html'">View More</button>
+            <div class="more-btn"><a href="./about.html">View More</a></div>
           </div>
         </div>
 
@@ -105,6 +107,8 @@
               当ポートフォリオサイトをご覧いただき、ありがとうございます。見る人が安心できて、ちょっとワクワクするデザインを心がけています。見やすくて使いやすいことはもちろん、訪れる人が気持ちよく過ごせるような雰囲気を大切にしています。ご依頼いただく方にとっても、ユーザーにとっても『ここなら大丈夫』と思ってもらえるように、寄り添いながらデザインを形にしていきます。
             </p>
           </div>
+          <img src="./images/ship.png" alt="">
+          <img src="./images/wave.png" alt="">
         </div>
       </section>
 
@@ -143,7 +147,8 @@
             <img src="./images/works4-100.jpg" alt="カフェ" />
           </picture>
         </div>
-        <button type="button" onclick="location.href='works.html'">View More</button>
+        <div class="more-btn"><a href="./works.html">View More</a></div>
+        <img src="./images/rope.png" alt="">
       </section>
 
       <!-- Skill -->
@@ -172,39 +177,87 @@
 
       <!-- Contact -->
       <section id="contact" class="contact">
+        <img src="./images/wave2.png" alt="">
         <h2>
           <img src="./images/contact.png" alt="CONTACT" />
         </h2>
-        <p>お問い合わせは下記のフォームまたはインスタグラムのDMから<br>お気軽にお問い合わせください。ご相談・お見積もり無料です。</p>
+        <p>
+          お問い合わせは下記のフォームまたはインスタグラムのDMから<br />お気軽にお問い合わせください。ご相談・お見積もり無料です。
+        </p>
         <div class="contact-form">
-          <table>
-            <tr>
-              <th>インスタグラム</th>
-              <td>[ @_capescape_ ]</td>
-            </tr>
-            <tr>
-              <th>会社名</th>
-              <td>社名／所属名</td>
-            </tr>
-            <tr>
-              <th>お名前＊</th>
-              <td>山田　太郎</td>
-            </tr>
-            <tr>
-              <th>ふりがな＊</th>
-              <td>やまだ　たろう</td>
-            </tr>
-            <tr>
-              <th>メールアドレス＊</th>
-              <td>odango@aaa.co.jp</td>
-            </tr>
-            <tr>
-              <th>お問い合わせ内容＊</th>
-              <td>お気軽にお問い合わせください</td>
-            </tr>
-          </table>
+          <form
+            action=""
+            method="POST"
+            target="hidden_iframe"
+            onsubmit="submitted=true;"
+            class="c-form"
+          >
+            <div class="c-form__item">
+              <label class="c-form__label" for="field-name"
+                ><div class="form__label-inner">
+                  <span class="label--ja">会社名</span>
+                  <span class="label--en">Company Name</span>
+                </div></label
+              >
+              <input
+                name=""
+                class="c-form__input"
+                id="field-conpany"
+                placeholder="社名／所属名"
+                type="text"
+              />
+            </div>
+            <div class="c-form__item">
+              <label class="c-form__label" for="field-name"
+                ><div class="form__label-inner">
+                  <span class="label--ja required">お名前</span>
+                  <span class="label--en required">Name</span>
+                </div></label
+              >
+              <input
+                name=""
+                class="c-form__input"
+                id="field-name"
+                placeholder="山田　太郎"
+                type="text"
+                required="required"
+              />
+            </div>
+            <div class="c-form__item">
+              <label class="c-form__label" for="field-mail"
+                ><div class="form__label-inner">
+                  <span class="label--ja required">メールアドレス</span>
+                  <span class="label--en required">Mail Address</span>
+                </div></label
+              >
+              <input
+                name=""
+                class="c-form__input"
+                id="field-mail"
+                placeholder="sample@gmail.com"
+                type="email"
+                required="required"
+              />
+            </div>
+            <div class="c-form__item">
+              <label class="c-form__label" for="field-message">
+                <div class="form__label-inner">
+                  <span class="label--ja required">お問い合わせ内容</span>
+                  <span class="label--en required">Contact</span>
+                </div></label
+              >
+              <textarea
+                name=""
+                class="c-form__input"
+                id="field-message"
+                placeholder="お問い合わせ内容"
+              ></textarea>
+            </div>
+            <div class="c-form__submit">
+              <button type="submit">送信</button>
+            </div>
+          </form>
         </div>
-        <button type="button" onclick="location.href=''">送信</button>
       </section>
     </main>
 

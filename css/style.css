@@ -1,5 +1,7 @@
 @charset "utf-8";
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #f6f3e7;
 }
@@ -17,6 +19,36 @@ main {
   main {
     margin-top: -14px;
   }
+}
+
+/* ==========
+button
+==========*/
+.more-btn {
+  width: 320px;
+  height: 70px;
+}
+.more-btn a {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #42210b;
+  color: #f6f3e7;
+  font-size: 30px;
+  text-align: center;
+  line-height: 70px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #fa5327;
+  border-radius: 70px;
+  box-shadow: -5px 5px 0px 0px #42210b;
+  transition: 0.3s;
+  border: 5px solid #fa5327;
+}
+.more-btn a:hover {
+  border: 5px solid #fa5327;
+  background-color: #f6f3e7;
+  color: #fa5327;
+  box-shadow: 0px 0px 0px 0px #42210b;
 }
 
 #header {
@@ -129,8 +161,8 @@ h2 img {
 .hero-text-main {
   line-height: 50px;
   font-size: 28px;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
-    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
   font-weight: bold;
   color: #f6f3e7;
   margin-bottom: 70px;
@@ -138,8 +170,8 @@ h2 img {
 .hero-text-sentence {
   line-height: 35px;
   font-size: 16px;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
-    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
   color: #f6f3e7;
 }
 
@@ -201,14 +233,17 @@ h2 img {
 .about-text p {
   line-height: 35px;
   font-size: 16px;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
-    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
   color: #f6f3e7;
 }
 
 /* Works */
 .works {
   text-align: center;
+}
+.works .more-btn {
+  margin: 40px auto;
 }
 .ttl--bubble {
   display: inline-block;
@@ -261,16 +296,16 @@ h2 img {
 }
 .skill-list h3 {
   font-size: 32px;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
-    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
   margin-top: 45px;
   font-weight: bold;
   color: #2e659e;
 }
 .skill-list p {
   font-size: 24px;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
-    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
   line-height: 2.5;
   font-weight: bold;
   color: #2e659e;
@@ -298,8 +333,8 @@ h2 img {
 }
 .contact p {
   font-size: 18px;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
-    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
   color: #f6f3e7;
   line-height: 32px;
 }
@@ -335,10 +370,10 @@ h2 img {
 
 .copyright {
   text-align: center;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
-    "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    font-size: 16px;
-    line-height: 35px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 16px;
+  line-height: 35px;
   color: #f6f3e7;
 }
 
@@ -524,4 +559,66 @@ h2 img {
     width: auto;
   }
 }
-  
+
+/* ==========
+form
+==========*/
+.contact-form {
+  padding-bottom: 330px;
+}
+.c-form {
+  max-width: 850px;
+  margin: 0 auto;
+}
+.c-form__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+.c-form__label {
+  width: 240px;
+}
+.c-form__input {
+  width: calc(100% - 240px);
+  height: 64px;
+  border-radius: 64px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: 5px solid #42210b;
+  font-size: 24px;
+}
+textarea.c-form__input {
+  height: 350px;
+  border-radius: 40px;
+  padding: 30px 20px;
+}
+.form__label-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #f6f3e7;
+}
+.label--ja {
+  font-size: 24px;
+}
+.label--en {
+  font-size: 16px;
+}
+
+.c-form__submit button {
+  width: 100px;
+  height: 52px;
+  background-color: #42210b;
+  border-radius: 52px;
+  text-align: center;
+  line-height: 52px;
+  color: #f6f3e7;
+  border: none;
+  box-shadow: -4px 3px 0px 0px #f6f3e7;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.c-form__submit button:hover {
+  transform: translate(4px, 3px);
+  box-shadow: 0px 0px 0px 0px #f6f3e7;
+}

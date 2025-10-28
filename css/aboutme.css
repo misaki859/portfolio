@@ -1,0 +1,282 @@
+@charset "UTF-8";
+body.aboutme-page {
+  background-color: #2e659e;
+}
+.aboutme-page .header_nav a {
+  color: #f6f3e7;
+}
+.aboutme-page .container {
+  position: relative;
+  padding: 430px 0 130px;
+  margin-top: 220px;
+}
+.aboutme-page .heading__h1 {
+  position: absolute;
+  z-index: 3;
+  max-width: 595px;
+  width: 100%;
+  top: 220px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.aboutme-page .heading__h2 {
+  text-align: center;
+}
+.aboutme-page .heading__h2 img {
+  width: auto;
+  height: 60px;
+}
+.aboutme__inner {
+  display: flex;
+  max-width: 805px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  align-items: center;
+  width: 80%;
+}
+.submarine {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  top: 50%;
+  left: 50%;
+}
+.aboutme__img {
+  width: 265px;
+}
+.aboutme__img img {
+  border-radius: 50%;
+}
+.aboutme__text-area {
+  width: calc(100% - 265px);
+  padding-left: 40px;
+  font-family:  "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium","游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: bold;
+}
+.name img {
+  width: auto;
+  margin-left: 25px;
+  margin-bottom: 34px;
+}
+.name--en img {
+  margin-bottom: 43px;
+}
+.aboutme__hero {
+  font-size: 24px;
+  margin-bottom: 27px;
+  color: #4f260be3;
+}
+.aboutme__text {
+  font-size: 14px;
+  line-height: 27px;
+  color: #4f260be3;
+}
+
+/* ==========
+fav
+==========*/
+.fav {
+  position: relative;
+}
+
+/* ==========
+各種項目
+==========*/
+.aboutme-sec__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+.aboutme-sec__inner p {
+  text-align: center;
+  color: #f6f3e7;
+  font-size: 24px;
+  line-height: 2;
+}
+
+/* ==========
+シャボン玉
+==========*/
+.sabon {
+  position: absolute;
+  z-index: 5;
+}
+.sabon--big {
+  width: 125px;
+}
+.sabon--middle {
+  width: 50px;
+}
+.sabon--small {
+  width: 30px;
+}
+.sabon--ex-small {
+  width: 22px;
+}
+
+.sabon01 {
+  top: 10px;
+  right: 10%;
+}
+.sabon02 {
+  left: -5%;
+  top: 170px;
+}
+.sabon03 {
+  bottom: -70px;
+  right: 13%;
+}
+.sabon04 {
+  right: 20%;
+  top: 160px;
+}
+.sabon05 {
+  right: -3%;
+  top: 230px;
+}
+.sabon06 {
+  top: 207px;
+  left: 20%;
+}
+.sabon07 {
+  left: 10%;
+  bottom: -40px;
+}
+.sabon08 {
+  left: 15%;
+  bottom: -140px;
+}
+.sabon09 {
+  right: 26%;
+  bottom: -120px;
+}
+.sabon10 {
+  right: 19%;
+  bottom: -210px;
+}
+.sabon11 {
+  right: 18%;
+  bottom: -870px;
+}
+.sabon12 {
+  bottom: -80px;
+  right: 10%;
+}
+.sabon13 {
+  right: 40%;
+  top: 90px;
+}
+.sabon14 {
+  right: 83%;
+  top: 180px;
+}
+.sabon15 {
+  right: 78%;
+  top: 260px;
+}
+.sabon16 {
+  right: 35%;
+  top: 880px;
+}
+.sabon17 {
+  right: 80%;
+  top: 900px;
+}
+.sabon18 {
+  right: 30%;
+  top: 1300px;
+}
+.sabon19 {
+  right: 15%;
+  top: 560px;
+}
+.sabon20 {
+  top: 100px;
+  left: 20%;
+}
+.sabon21 {
+  left: 17%;
+  bottom: -670px;
+}
+.sabon22 {
+  left: 15%;
+  bottom: -710px;
+}
+.sabon23 {
+  left: 19%;
+  bottom: -750px;
+}
+
+.stitch {
+  position: absolute;
+  z-index: 4;
+}
+.cars {
+  width: 276px;
+  top: -240px;
+  left: 100px;
+}
+.mario {
+  width: 241px;
+  top: 0px;
+  left: 770px;
+}
+.poteto {
+  width: 236px;
+  top: 260px;
+  left: 100px;
+}
+.burger {
+  width: 242px;
+  top: 730px;
+  left: 770px;
+}
+.plankton {
+  width: 278px;
+  top: 1160px;
+  left: 400px;
+}
+.sax {
+  width: 346px;
+  top: 1030px;
+  left: -40px;
+}
+
+.main {
+  margin-bottom: 315px;
+}
+
+.footer {
+  background: #fa5327;
+  position: relative;
+}
+
+.footer img {
+  width: 358px;
+  height: auto;
+  margin-top: none;
+  margin-bottom: none;
+}
+
+.pagetop {
+  position: fixed; /* ← 固定表示 */
+  right: 20px;
+  bottom: 130px;
+  z-index: 1000; /* 他の要素より前に出す */
+}
+
+.pagetop img {
+  width: 125px;
+  height: auto;
+  display: block;
+}
+
+.copyright {
+  text-align: center;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium",
+    "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 16px;
+  line-height: 35px;
+  color: #f6f3e7;
+}
