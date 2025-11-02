@@ -3,6 +3,30 @@
 body.works-page {
   background-image: url(../images/check.png);
 }
+.header_nav a {
+  display: block;
+  font-size: 35px;
+  color: #2e659e;
+  font-family: Meiryo UI Italic, "游ゴシック体", YuGothic, "游ゴシック Medium","Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+.header_nav a::after {
+  content: ''; /* 疑似要素にはcontentプロパティが必要 */
+  position: absolute; /* 親要素（a）を基準に配置 */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px; /* 下線の太さ */
+  background-color: #2e659e; /* 下線の色 */
+  transform: scaleX(0); /* 初期状態では幅を0にして見えなくする */
+  transition: transform 0.3s ease; /* アニメーションの設定 */
+  transform-origin: left; /* アニメーションの起点（左）を設定 */
+}
+/* ホバー時の下線（疑似要素）のスタイル */
+.header_nav a:hover::after {
+  transform: scaleX(1); /* ホバー時に幅を100%にする */
+}
 
 .works-page .heading__h1 {
   width: 403px;
@@ -51,4 +75,110 @@ body.works-page {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* ========================================
+responsive
+======================================== */
+@media screen and (max-width: 1100px) {
+  .header_nav {
+    display: none;
+  }
+
+  .hambuger {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 9999;
+    cursor: pointer;
+  }
+  
+  .hambuger span, .hambuger span::before, .hambuger span::after {
+    width: 30px;
+    height: 3px;
+    background-color: #fa5327;
+    position: absolute;
+    transition: .3s;
+  }
+
+.hambuger span {
+    top: 14px;
+  }
+
+  .hambuger span::before {
+    content: "";
+    top: -14px;
+  }
+
+  .hambuger span::after {
+    content: "";
+    bottom: -14px;
+  }
+
+  .open span {
+    background-color: transparent;
+  }
+  .open span::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  .open span::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+  }
+
+  .header_nav-sp {
+    position: absolute;
+    background-color: #4f260bd9;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+
+  .header_nav-sp ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .header_nav-sp a {
+    display: block;
+    color: #f6f3e7;
+    font-size: 35px;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+  }  
+
+  .header_nav-sp a::after {
+    content: ''; /* 疑似要素にはcontentプロパティが必要 */
+    position: absolute; /* 親要素（a）を基準に配置 */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px; /* 下線の太さ */
+    background-color: #f6f3e7; /* 下線の色 */
+    transform: scaleX(0); /* 初期状態では幅を0にして見えなくする */
+    transition: transform 0.3s ease; /* アニメーションの設定 */
+    transform-origin: left; /* アニメーションの起点（左）を設定 */
+  }
+
+  /* ホバー時の下線（疑似要素）のスタイル */
+  .header_nav-sp a:hover::after {
+    transform: scaleX(1); /* ホバー時に幅を100%にする */
+  }
+
+  .works__item {
+    width: 45%;
+  }
+  .works-page .works-hp__item {
+    width: 70%;
+  }
 }

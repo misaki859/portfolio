@@ -70,9 +70,15 @@
           <h2><img src="./images/concept.png" alt="CONCEPT" /></h2>
           <div class="concept__colums">
             <div class="hero-content wrapper">
-              <img src="./images/lightroom1.png" alt="灯台1" />
-              <img src="./images/lightroom2.png" alt="灯台2" />
-              <img src="./images/lightroom3.png" alt="灯台3" />
+              <div class="lighthouse lighthouse01">
+                <img src="./images/lightroom1.png" alt="灯台1" />
+              </div>
+              <div class="lighthouse lighthouse02">
+                <img src="./images/lightroom2.png" alt="灯台2" />
+              </div>
+              <div class="lighthouse lighthouse03">
+                <img src="./images/lightroom3.png" alt="灯台3" />
+              </div>
             </div>
             <div class="concept__text-area">
               <p class="hero-text-main">
@@ -101,16 +107,19 @@
 
         <div class="about-content-sp">
           <h2><img src="./images/about_1.png" alt="ABOUT" /></h2>
-          <img src="./images/about.png" alt="写真" />
+          <img class="about__image" src="./images/about.png" alt="写真" />
           <div class="about-text wrapper">
             <p>
               当ポートフォリオサイトをご覧いただき、ありがとうございます。見る人が安心できて、ちょっとワクワクするデザインを心がけています。見やすくて使いやすいことはもちろん、訪れる人が気持ちよく過ごせるような雰囲気を大切にしています。ご依頼いただく方にとっても、ユーザーにとっても『ここなら大丈夫』と思ってもらえるように、寄り添いながらデザインを形にしていきます。
             </p>
+            <div class="more-btn"><a href="./about.html">View More</a></div>
           </div>
-          <img src="./images/ship.png" alt="">
-          <img src="./images/wave.png" alt="">
         </div>
       </section>
+      <div class="wave">
+        <img class="ship" src="./images/ship.png" alt="" />
+        <img class="wave-blue" src="./images/wave.png" alt="" />
+      </div>
 
       <!-- Works -->
       <section id="works" class="works">
@@ -147,8 +156,9 @@
             <img src="./images/works4-100.jpg" alt="カフェ" />
           </picture>
         </div>
+        <div class="arrow__box"></div>
         <div class="more-btn"><a href="./works.html">View More</a></div>
-        <img src="./images/rope.png" alt="">
+        <img src="./images/rope@2x.png" alt="">
       </section>
 
       <!-- Skill -->
@@ -176,8 +186,11 @@
       </section>
 
       <!-- Contact -->
+      <div class="wave">
+        <img class="wave-orange" src="./images/wave2.png" alt="" />
+        <img class="wave-orange-sp" src="./images/wave2.png" alt="" />
+      </div>
       <section id="contact" class="contact">
-        <img src="./images/wave2.png" alt="">
         <h2>
           <img src="./images/contact.png" alt="CONTACT" />
         </h2>
@@ -195,8 +208,41 @@
             <div class="c-form__item">
               <label class="c-form__label" for="field-name"
                 ><div class="form__label-inner">
+                  <span class="label--ja">インスタグラム</span>
+                  <span class="label--en">Instagram</span>
+                </div></label
+              >
+              <p>[ @_capescape_ ]</p>
+            </div>
+            <div class="c-form__item--sp">
+              <label class="c-form__label" for="field-name"
+                ><div class="form__label-inner">
+                  <span class="label--ja">インスタグラム</span>
+                  <span class="label--en">Instagram</span>
+                </div></label
+              >
+              <p>[ @_capescape_ ]</p>
+            </div>
+            <div class="c-form__item">
+              <label class="c-form__label" for="field-name"
+                ><div class="form__label-inner">
                   <span class="label--ja">会社名</span>
                   <span class="label--en">Company Name</span>
+                </div></label
+              >
+              <input
+                name=""
+                class="c-form__input"
+                id="field-conpany"
+                placeholder="社名／所属名"
+                type="text"
+              />
+            </div>
+            <div class="c-form__item--sp">
+              <label class="c-form__label" for="field-name"
+                ><div class="form__label-inner">
+                  <span class="label--ja--sp">会社名</span>
+                  <span class="label--en--sp">Company Name</span>
                 </div></label
               >
               <input
@@ -212,6 +258,22 @@
                 ><div class="form__label-inner">
                   <span class="label--ja required">お名前</span>
                   <span class="label--en required">Name</span>
+                </div></label
+              >
+              <input
+                name=""
+                class="c-form__input"
+                id="field-name"
+                placeholder="山田　太郎"
+                type="text"
+                required="required"
+              />
+            </div>
+            <div class="c-form__item--sp">
+              <label class="c-form__label" for="field-name"
+                ><div class="form__label-inner">
+                  <span class="label--ja--sp required">お名前</span>
+                  <span class="label--en--sp required">Name</span>
                 </div></label
               >
               <input
@@ -239,6 +301,22 @@
                 required="required"
               />
             </div>
+            <div class="c-form__item--sp">
+              <label class="c-form__label" for="field-mail"
+                ><div class="form__label-inner">
+                  <span class="label--ja--sp required">メールアドレス</span>
+                  <span class="label--en--sp required">Mail Address</span>
+                </div></label
+              >
+              <input
+                name=""
+                class="c-form__input"
+                id="field-mail"
+                placeholder="sample@gmail.com"
+                type="email"
+                required="required"
+              />
+            </div>
             <div class="c-form__item">
               <label class="c-form__label" for="field-message">
                 <div class="form__label-inner">
@@ -250,7 +328,21 @@
                 name=""
                 class="c-form__input"
                 id="field-message"
-                placeholder="お問い合わせ内容"
+                placeholder="お気軽にお問い合わせください"
+              ></textarea>
+            </div>
+            <div class="c-form__item--sp">
+              <label class="c-form__label" for="field-message">
+                <div class="form__label-inner">
+                  <span class="label--ja--sp required">お問い合わせ内容</span>
+                  <span class="label--en--sp required">Contact</span>
+                </div></label
+              >
+              <textarea
+                name=""
+                class="c-form__input"
+                id="field-message"
+                placeholder="お気軽にお問い合わせください"
               ></textarea>
             </div>
             <div class="c-form__submit">
