@@ -128,19 +128,20 @@ fav
 ==========*/
 .sabon {
   position: absolute;
+  width: 100%;
   z-index: 5;
 }
 .sabon--big {
-  width: 125px;
+  max-width: 125px;
 }
 .sabon--middle {
-  width: 50px;
+  max-width: 50px;
 }
 .sabon--small {
-  width: 30px;
+  max-width: 30px;
 }
 .sabon--ex-small {
-  width: 22px;
+  max-width: 22px;
 }
 
 .sabon01 {
@@ -427,6 +428,79 @@ responsive
     z-index: 3;
     align-items: center;
     width: 80%;
+  }
+
+  .name--sp {
+    width: auto;
+    margin-bottom: 34px;
+  }
+.name img {
+  display: none;
+  }
+
+  .sabon--big {
+    max-width: 35px;
+  }
+  .sabon--middle {
+    max-width: 15px;
+  }
+  .sabon--small {
+    max-width: 10px;
+  }
+  .sabon--ex-small {
+    display: none;
+  }
+  .sabon11 {
+    right: 18%;
+    bottom: -870px;
+  }
+  .sabon12 {
+    bottom: -80px;
+    right: 10%;
+  }
+  .sabon13 {
+    right: 40%;
+    top: 90px;
+  }
+  .sabon14 {
+    left: 0;
+    top: 300px;
+  }
+  .sabon15 {
+    left: 7%;
+    top: 380px;
+  }
+  .sabon16 {
+    right: 35%;
+    top: 880px;
+  }
+  .sabon17 {
+    right: 80%;
+    top: 900px;
+  }
+  .sabon18 {
+    right: 30%;
+    top: 1300px;
+  }
+  .sabon19 {
+    right: 15%;
+    top: 560px;
+  }
+  .sabon20 {
+      top: 230px;
+      left: 8%;
+  }
+  .sabon21 {
+    left: 23%;
+    bottom: -670px;
+  }
+  .sabon22 {
+    left: 20%;
+    bottom: -720px;
+  }
+  .sabon23 {
+    left: 23%;
+    bottom: -750px;
   }
   .cars {
     width: 130px;

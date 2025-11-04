@@ -187,6 +187,9 @@ HERO / CONCEPT
   margin-left: 120px;
 }
 
+.sp-only {
+  display: none;
+}
 .hero-text-main {
   line-height: 50px;
   font-size: 28px;
@@ -393,6 +396,37 @@ WORKS
   width: 100%;
 }
 
+#mask-path1 {
+  fill: none; /* 塗りの色 */
+  stroke: #f6f3e7; /* 線の色 */
+  stroke-width: 200px; /* 線幅 */
+  stroke-linecap: round; /* 線端の形状 */
+  stroke-linejoin: round; /* 角の形状 */
+  stroke-dasharray: 2000; /* 線の間隔を指定する */
+  stroke-dashoffset: 2000; /* 線の位置を指定する */
+  animation: draw 5s ease forwards; /* アニメーション設定 5秒間で線が描かれる*/
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+#mask-path2 {
+  fill: none; /* 塗りの色 */
+  stroke: #f6f3e7; /* 線の色 */
+  stroke-width: 85px; /* 線幅 */
+  stroke-linecap: round; /* 線端の形状 */
+  stroke-linejoin: round; /* 角の形状 */
+  stroke-dasharray: 2000; /* 線の間隔を指定する */
+  stroke-dashoffset: 2000; /* 線の位置を指定する */
+  animation: draw 5s ease forwards; /* アニメーション設定 5秒間で線が描かれる*/
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 /* ========================================
 SKILL
 ======================================== */
@@ -485,7 +519,9 @@ FORM
   /* Border方式 */
 .c-form__item p::after {
 	content: "";
-	display: block;
+  position: absolute;
+  margin: auto;
+  margin-left: 50px;
 	border-style: solid;
 	border-width: 15px 0px 15px 15px;
 	border-color: transparent transparent transparent #f6f3e7;
@@ -540,7 +576,7 @@ textarea.c-form__input {
 }
 
 .c-form__submit button:hover {
-  transform: translate(4px, 3px);
+  transform: translate(-4px, 3px);
   box-shadow: 0 0 0 0 #f6f3e7;
 }
 
@@ -658,7 +694,7 @@ responsive
     height: 30px;
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 50px;
     z-index: 9999;
     cursor: pointer;
   }
@@ -709,10 +745,10 @@ responsive
   .header_nav-sp ul {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 90%;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 70px;
   }
 
   .header_nav-sp a {
@@ -805,6 +841,9 @@ responsive
 
 
   /* Heroの文字サイズ調整 */
+  .sp-only {
+    display: block;
+  }
   .hero-text .hero-text-main {
     font-size: 24px;
     margin: 30px 0 22px;
@@ -958,8 +997,8 @@ responsive
   }
 
   .footer img {
-    width: 358px;
-    height: auto;
+    width: auto;
+    height: 50px;
     padding-top: 23px;
     margin: 0 auto;
   }
@@ -975,5 +1014,10 @@ responsive
   .pagetop img {
     height: 100px;
     width: auto;
+    position: fixed; /* ← 固定表示 */
+    right: 0;
+    bottom: 9px;
+    z-index: 1000; /* 他の要素より前に出す */
+    transform: translateY(6px);
   }
 }

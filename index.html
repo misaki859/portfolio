@@ -82,10 +82,10 @@
             </div>
             <div class="concept__text-area">
               <p class="hero-text-main">
-                岬に立つ灯台のように、<br />嵐の中たどり着いた安心できる場所。<br />いつもそこにいて、<br />暖かく照らして導いてくれる存在。
+                岬に立つ灯台のように、<br />嵐の中たどり着いた安心できる場所。<br />いつもそこにいて、<br />暖かく照らして<br class="sp-only">導いてくれる存在。
               </p>
               <p class="hero-text-sentence">
-                灯台は、どんな天気の日も変わらずに光を放ち、迷う船を安心へと導きます。私もWEBデザイナーとして、そんな存在でありたいと考えています。サイトを訪れる人が迷わず進めるように、シンプルで使いやすく、心地よさを感じられるデザインを大切にしています。見た目の美しさだけでなく、目的へたどり着くためのわかりやすい導線、安心感を与える雰囲気づくりを心がけています。依頼してくださる方にとっても、訪れるユーザーにとっても、いつもそこにあり続け、温かく照らす灯台のような存在でいたい。<br />――それが私の目指すWEBデザイナーです。
+                灯台は、どんな天気の日も変わらずに<br class="sp-only">光を放ち、<br class="sp-only">迷う船を安心へと導きます。<br class="sp-only">私もWEBデザイナーとして、<br class="sp-only">そんな存在でありたいと考えています。<br class="sp-only">サイトを訪れる人が迷わず進めるように、<br class="sp-only">シンプルで使いやすく、<br class="sp-only">心地よさを感じられるデザインを<br class="sp-only">大切にしています。<br class="sp-only">見た目の美しさだけでなく、<br class="sp-only">目的へたどり着くためのわかりやすい導線、<br class="sp-only">安心感を与える雰囲気づくりを<br class="sp-only">心がけています。<br class="sp-only">依頼してくださる方にとっても、<br class="sp-only">訪れるユーザーにとっても、<br class="sp-only">いつもそこにあり続け、<br class="sp-only">温かく照らす灯台のような存在でいたい。<br />――それが私の目指すWEBデザイナーです。
               </p>
             </div>
           </div>
@@ -110,7 +110,7 @@
           <img class="about__image" src="./images/about.png" alt="写真" />
           <div class="about-text wrapper">
             <p>
-              当ポートフォリオサイトをご覧いただき、ありがとうございます。見る人が安心できて、ちょっとワクワクするデザインを心がけています。見やすくて使いやすいことはもちろん、訪れる人が気持ちよく過ごせるような雰囲気を大切にしています。ご依頼いただく方にとっても、ユーザーにとっても『ここなら大丈夫』と思ってもらえるように、寄り添いながらデザインを形にしていきます。
+              当ポートフォリオサイトをご覧いただき、ありがとうございます。<br class="sp-only">見る人が安心できて、ちょっとワクワクするデザインを心がけています。見やすくて使いやすいことはもちろん、訪れる人が気持ちよく過ごせるような雰囲気を大切にしています。ご依頼いただく方にとっても、ユーザーにとっても『ここなら大丈夫』と思ってもらえるように、寄り添いながらデザインを形にしていきます。
             </p>
             <div class="more-btn"><a href="./about.html">View More</a></div>
           </div>
@@ -158,9 +158,17 @@
         </div>
         <div class="arrow__box"></div>
         <div class="more-btn"><a href="./works.html">View More</a></div>
-        <img src="./images/rope@2x.png" alt="">
+        <svg id="svg-mask" viewBox="0 0 1399.2 338.4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- SVG画像のマスク（パス） -->
+          <mask id="txt-mask">
+            <path id="mask-path1" d="M-23,107s100.2,94.5,174.1,122.2,145.9,41.7,268.7,44.3,223.9-10.6,397.8-52.2,265.4-46.2,270.1-166.4-142.3-56-143.5.7,19.9,144.8,43,163.1,105.6,32.2,201.1,26.2,245.5-44.6,257.3-45.7"/>
+            <path id="mask-path2" d="M959.1,189.3s196.1-85.8,104.1-175.4-174.7,166.8-135.9,187.8,187.6,48.7,285.9,40.9,202.4-34.4,202.4-34.4"/>
+          </mask>
+          <!-- SVG画像 -->
+          <image href="./images/rope.svg" width="100%" height="100%" mask="url(#txt-mask)" />
+        </svg>
       </section>
-
+        
       <!-- Skill -->
       <section id="skill" class="skill wrapper">
         <h2 class="ttl--bubble">
@@ -368,7 +376,7 @@
         </div>
       </div>
     </footer>
-    <a href="#top" class="pagetop">
+    <a href="#top" class="pagetop" id="page-top">
       <img src="./images/workslightroom@2x.png" alt="PAGE TOP" />
     </a>
 
