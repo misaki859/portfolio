@@ -32,15 +32,8 @@ p {
 
 .works-page .heading__h1 {
   width: 403px;
-  position: relative;
   margin: 0 auto;
   padding: 100px 0;
-}
-.works-page .heading__h1-img--bubble {
-  position: absolute;
-  width: 89px;
-  top: 60px;
-  right: -60px;
 }
 
 .works-page .works__list {
@@ -115,7 +108,7 @@ responsive
     transition: .3s;
   }
 
-.hambuger span {
+  .hambuger span {
     top: 14px;
   }
 
@@ -184,6 +177,10 @@ responsive
   /* ホバー時の下線（疑似要素）のスタイル */
   .header_nav-sp a:hover::after {
     transform: scaleX(1); /* ホバー時に幅を100%にする */
+  }
+
+  .works-page .heading__h1 {
+    width: 200px;
   }
 
   .works__item {
