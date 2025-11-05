@@ -271,40 +271,17 @@ HERO / CONCEPT
 /* ========================================
 ABOUT
 ======================================== */
-.wave-blue {
-  transform: translateY(-2px);
-  position:relative;
-	overflow:hidden;
-	margin:0 auto;
-	height:450px;
-}
-.wave-blue::before {
-  position:absolute;
-  top:-150%;
-  left:-50%;
-  border-radius:50% 50% / 50% 70%;
-  width:200%;
-  height:200%;
-  content:"";
-  background-color:#2e659e;
-  animation:wave linear 6s infinite;
-}
-@keyframes wave {
-	from {
-		transform:rotate(0deg);
-	}
-	to {
-		transform:rotate(360deg);
-	}
-}
 
 .ship {
   position: absolute;
   width: 18%;
   z-index: 9997;
-  margin-top: 160px;
+  transform: translateX(210%);
+  margin-top: 40px;
 }
-
+.wave-blue {
+  transform: translateY(-10px);
+}
 .about {
   background: #2e659e;
 }
@@ -394,37 +371,6 @@ WORKS
 
 .works-list img {
   width: 100%;
-}
-
-#mask-path1 {
-  fill: none; /* 塗りの色 */
-  stroke: #f6f3e7; /* 線の色 */
-  stroke-width: 200px; /* 線幅 */
-  stroke-linecap: round; /* 線端の形状 */
-  stroke-linejoin: round; /* 角の形状 */
-  stroke-dasharray: 2000; /* 線の間隔を指定する */
-  stroke-dashoffset: 2000; /* 線の位置を指定する */
-  animation: draw 5s ease forwards; /* アニメーション設定 5秒間で線が描かれる*/
-}
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-#mask-path2 {
-  fill: none; /* 塗りの色 */
-  stroke: #f6f3e7; /* 線の色 */
-  stroke-width: 85px; /* 線幅 */
-  stroke-linecap: round; /* 線端の形状 */
-  stroke-linejoin: round; /* 角の形状 */
-  stroke-dasharray: 2000; /* 線の間隔を指定する */
-  stroke-dashoffset: 2000; /* 線の位置を指定する */
-  animation: draw 5s ease forwards; /* アニメーション設定 5秒間で線が描かれる*/
-}
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0;
-  }
 }
 
 /* ========================================
@@ -707,7 +653,7 @@ responsive
     transition: .3s;
   }
 
-.hambuger span {
+  .hambuger span {
     top: 14px;
   }
 
@@ -777,7 +723,13 @@ responsive
   .header_nav-sp a:hover::after {
     transform: scaleX(1); /* ホバー時に幅を100%にする */
   }
-
+  .ship {
+    position: absolute;
+    width: 18%;
+    z-index: 9997;
+    transform: translateX(210%);
+    margin-top: 40px;
+  }
   .about-content {
     padding-bottom: 30px;
   }
@@ -855,6 +807,13 @@ responsive
   }
 
   /* About: 横並び→縦並び */
+  .ship {
+    position: absolute;
+    width: 18%;
+    z-index: 9997;
+    transform: translateX(210%);
+    margin-top: 20px;
+  }
   .about-content {
     display: none;
   }
@@ -929,23 +888,31 @@ responsive
     display: none;
   }
   .c-form__item--sp {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 45px;
   }
-  .c-form__item p {
+  .label--ja {
+  font-size: 16px;
+  }
+  .label--en {
+    font-size: 14px;
+  }
+  .c-form__item--sp p {
     margin: 0 auto;
-    font-size: 32px;
+    font-size: 16px;
   }
     /* Border方式 */
-  .c-form__item p::after {
+  .c-form__item--sp p::after {
     content: "";
     display: block;
     border-style: solid;
-    border-width: 15px 0px 15px 15px;
+    border-width: 5px 0px 5px 5px;
     border-color: transparent transparent transparent #f6f3e7;
   }
   .c-form__label {
-    width: 240px;
+    margin: 0 auto;
+    width: 100px;
   }
   .c-form__input {
     width: calc(100% - 50px);

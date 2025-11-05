@@ -169,7 +169,7 @@ fav
   top: 230px;
 }
 .sabon06 {
-  top: 207px;
+  top: 117px;
   left: 20%;
 }
 .sabon07 {
@@ -302,8 +302,6 @@ fav
 }
 
 .pagetop img {
-  width: 125px;
-  height: auto;
   display: block;
 }
 
@@ -334,7 +332,6 @@ responsive
     z-index: 9999;
     cursor: pointer;
   }
-  
   .hambuger span, .hambuger span::before, .hambuger span::after {
     width: 30px;
     height: 3px;
@@ -342,16 +339,13 @@ responsive
     position: absolute;
     transition: .3s;
   }
-
   .hambuger span {
     top: 14px;
   }
-
   .hambuger span::before {
     content: "";
     top: -14px;
   }
-
   .hambuger span::after {
     content: "";
     bottom: -14px;
@@ -376,8 +370,8 @@ responsive
     height: 100vh;
     top: 0;
     left: 0;
+    z-index: 9990;
   }
-
   .header_nav-sp ul {
     display: flex;
     flex-direction: column;
@@ -386,7 +380,6 @@ responsive
     align-items: center;
     gap: 100px;
   }
-
   .header_nav-sp a {
     display: block;
     color: #f6f3e7;
@@ -395,7 +388,6 @@ responsive
     position: relative;
     overflow: hidden;
   }  
-
   .header_nav-sp a::after {
     content: ''; /* 疑似要素にはcontentプロパティが必要 */
     position: absolute; /* 親要素（a）を基準に配置 */
@@ -408,12 +400,25 @@ responsive
     transition: transform 0.3s ease; /* アニメーションの設定 */
     transform-origin: left; /* アニメーションの起点（左）を設定 */
   }
-
   /* ホバー時の下線（疑似要素）のスタイル */
   .header_nav-sp a:hover::after {
     transform: scaleX(1); /* ホバー時に幅を100%にする */
   }
 
+  .aboutme-page .container {
+    position: relative;
+    padding: 70px 0 10px;
+    margin-top: 50px;
+  }
+  .aboutme-page .heading__h1 {
+    position: absolute;
+    z-index: 9;
+    max-width: 595px;
+    width: 400px;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   .submarine {
     display: none;
   }
@@ -421,9 +426,13 @@ responsive
     display: none;
   }
   .aboutme__img--sp {
+    position: absolute;
+    transform: translate(-50%, -50%);
     display: block;
-    height: 249px;
-    width: auto;
+    height: 1400px;
+    width: 600px;
+    top: 70%;
+    left: 50%;
   }
   .aboutme__inner {
     display: none;
@@ -439,11 +448,13 @@ responsive
   }
   
   .aboutme__text-area {
-    margin: 400px auto ;
+    margin: 0  auto ;
     width: 100%;
+    padding-left: 0;
   }
   .name--sp {
     width: auto;
+    margin-top: 450px;
   }
   .name img {
     display: none;
@@ -585,9 +596,36 @@ responsive
 responsive
 ======================================== */
 @media screen and (max-width: 768px) {
+  .aboutme-page .container {
+    position: relative;
+    padding: 10px 0 10px;
+    margin-top: 30px;
+  }
+  .aboutme-page .heading__h1 {
+    position: absolute;
+    z-index: 999;
+    max-width: 595px;
+    width: 200px;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .aboutme__img--sp {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: block;
+    height: auto;
+    width: 300px;
+    top: -30%;
+    left: 50%;
+  }
   .aboutme__text-area {
-    margin: 200px auto ;
+    margin: 0 auto ;
     width: 100%;
+  }
+  .name--sp {
+    width: auto;
+    margin-top: 350px;
   }
   .plankton {
     width: 150px;
