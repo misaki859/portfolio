@@ -46,6 +46,9 @@ p {
   align-items: flex-start;
   padding: 0 5%;
 }
+.sp-only {
+  display: none;
+}
 .works__item {
   width: 30%;
 }
@@ -56,7 +59,7 @@ p {
 .subject {
   font-size: 24px;
   font-weight: bold;
-  margin: 14px;
+  margin: 14px 0;
 }
 .works-page .works-hp__list {
   max-width: 1100px;
@@ -186,7 +189,23 @@ responsive
   .works__item {
     width: 45%;
   }
+  .sp-only {
+    display: none;
+  }
   .works-page .works-hp__item {
     width: 100%;
+  }
+}
+/* ========================================
+responsive
+======================================== */
+@media screen and (max-width: 768px) {
+  .subject {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 14px 0;
+  }
+  .sp-only {
+    display: block;
   }
 }
