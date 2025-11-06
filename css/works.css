@@ -2,6 +2,7 @@
 
 body.works-page {
   background-image: url(../images/check.png);
+  background-size: 20%;
 }
 p {
   color: #2e659e;

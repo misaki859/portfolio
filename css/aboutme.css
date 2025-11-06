@@ -165,7 +165,7 @@ fav
   top: 160px;
 }
 .sabon05 {
-  right: 0;
+  right: 30px;
   top: 230px;
 }
 .sabon06 {
@@ -475,6 +475,14 @@ responsive
   .sabon--ex-small {
     display: none;
   }
+  .sabon01 {
+  top: 70px;
+  right: 10%;
+  }
+  .sabon02 {
+    left: 10%;
+    top: 170px;
+  }
   .sabon11 {
     right: 18%;
     bottom: -870px;
@@ -484,24 +492,24 @@ responsive
     right: 10%;
   }
   .sabon13 {
-    right: 40%;
-    top: 90px;
+    right: 30%;
+    top: 30px;
   }
   .sabon14 {
-    left: 0;
+    left: 20px;
     top: 300px;
   }
   .sabon15 {
-    left: 7%;
-    top: 380px;
+    left: 10%;
+    top: 340px;
   }
   .sabon16 {
     right: 35%;
     top: 880px;
   }
   .sabon17 {
-    right: 80%;
-    top: 900px;
+    right: 85%;
+    top: 1050px;
   }
   .sabon18 {
     right: 30%;
@@ -516,12 +524,12 @@ responsive
       left: 8%;
   }
   .sabon21 {
-    left: 23%;
-    bottom: -670px;
+    left: 15%;
+    bottom: -800px;
   }
   .sabon22 {
-    left: 20%;
-    bottom: -720px;
+    left: 80px;
+    bottom: -850px;
   }
   .sabon23 {
     left: 23%;
@@ -550,12 +558,12 @@ responsive
   }
   .plankton {
     width: 150px;
-    top: 1400px;
+    top: 1310px;
     left: 40%;
   }
   .sax {
     width: 130px;
-    top: 1180px;
+    top: 1130px;
     left: 0;
   }
   .name {
@@ -590,6 +598,9 @@ responsive
   .aboutme-sec__inner p {
     font-size: 16px;
     line-height: 2;
+  }
+  .others {
+    margin-bottom: 30px;
   }
 }
 /* ========================================
@@ -627,9 +638,45 @@ responsive
     width: auto;
     margin-top: 350px;
   }
+  .sabon05 {
+  right: 30px;
+  top: 200px;
+}
+  .sabon13 {
+    right: 40%;
+    top: 30px;
+  }
+  .sabon21 {
+    left: 23%;
+    bottom: -800px;
+  }
+  .sabon22 {
+    bottom: -850px;
+  }
+  .cars {
+    width: 160px;
+    top: -370px;
+    left: 10px;
+  }
+  .mario {
+    max-width: 130px;
+    width: 50%;
+    top: 0;
+    right: 0;
+  }
+  .poteto {
+    width: 110px;
+    top: 330px;
+    left: 10px;
+  }
+  .burger {
+    width: 130px;
+    top: 740px;
+    right: 0;
+  }
   .plankton {
     width: 150px;
-    top: 1400px;
+    top: 1310px;
     left: 20%;
   }
 }

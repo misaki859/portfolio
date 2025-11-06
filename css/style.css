@@ -32,7 +32,7 @@ h2 img {
   display: inline-block;
   width: auto;
   height: 100px;
-  margin: 120px 0 56px;
+  margin: 80px 0 56px;
 }
 
 /* --- Responsive (Base) --- */
@@ -313,6 +313,7 @@ ABOUT
   line-height: 35px;
   font-size: 16px;
   color: #f6f3e7;
+  margin-bottom: 50px;
 }
 
 .about .more-btn {
@@ -352,14 +353,14 @@ WORKS
   background-image: url(../images/left.png);
   width: 51px;
   height: 43px;
-  top: 120px;
+  top: 80px;
   left: -60px;
 }
 .ttl--bubble::after {
   background-image: url(../images/right.png);
   width: 77px;
   height: 77px;
-  top: 80px;
+  top: 40px;
   right: -80px;
 }
 
@@ -383,7 +384,7 @@ SKILL
 .skill-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 385px;
+  margin-bottom: 150px;
 }
 
 .skill-item {
@@ -497,6 +498,7 @@ textarea.c-form__input {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-bottom: 10px;
   color: #f6f3e7;
 }
 
@@ -519,6 +521,7 @@ textarea.c-form__input {
   color: #f6f3e7;
   cursor: pointer;
   transition: .3s;
+  font-size: 16px;
 }
 
 .c-form__submit button:hover {
@@ -743,6 +746,13 @@ responsive
   #header {
     padding-top: 0;
   }
+  .more-btn a {
+  width: 80%;
+  height: 80%;
+  font-size: 25px;
+  line-height: 50px;
+  margin: 0 auto;
+}
   .wrapper {
     padding: 0 20px;
   }
@@ -819,7 +829,7 @@ responsive
   }
   .about-content-sp {
     display: block;
-    padding-bottom: 30px;
+    padding-bottom: 130px;
   }
   .about-content-sp .about__image {
     display: block;
@@ -843,6 +853,27 @@ responsive
      gap: 35px;
   }
 
+  .ttl--bubble::before, .ttl--bubble::after {
+  position: absolute;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.ttl--bubble::before {
+  background-image: url(../images/left.png);
+  width: 51px;
+  height: 43px;
+  top: 80px;
+  left: -35px;
+}
+.ttl--bubble::after {
+  background-image: url(../images/right.png);
+  width: 77px;
+  height: 77px;
+  top: 60px;
+  right: -80px;
+}
   .ttl--bubble {
     top: 0;
   }
@@ -852,7 +883,7 @@ responsive
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 0;
 
     gap: 20px;
   }
@@ -881,6 +912,7 @@ responsive
     padding-bottom: 100px;
   }
   .c-form {
+    width: 90%;
     max-width: 850px;
     margin: 0 auto;
   }
@@ -888,9 +920,21 @@ responsive
     display: none;
   }
   .c-form__item--sp {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     margin-bottom: 45px;
+  }
+  .form-instagram {
+    display: flex;
+    align-items: center;
+  }
+  .form-instagram .instagram-id {
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .form-instagram .form__label-inner {
+    padding-bottom: 0;
+    padding-left: 0;
   }
   .label--ja {
   font-size: 16px;
@@ -909,19 +953,23 @@ responsive
     border-style: solid;
     border-width: 5px 0px 5px 5px;
     border-color: transparent transparent transparent #f6f3e7;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
   }
   .c-form__label {
     margin: 0 auto;
     width: 100px;
   }
   .c-form__input {
-    width: calc(100% - 50px);
+    width: 100%;
     height: 64px;
     border-radius: 64px;
     padding: 10px 20px;
     box-sizing: border-box;
     border: 5px solid #42210b;
-    font-size: 24px;
+    font-size: 16px;
   }
   textarea.c-form__input {
     height: 350px;
@@ -933,11 +981,10 @@ responsive
     flex-direction: column;
     align-items: flex-start;
     color: #f6f3e7;
-  }
-  .label--ja--sp, .label--en--sp {
-    display: none;
-  }
+    padding-left: 30px;
 
+    gap: 5px;
+  }
   .c-form__submit button {
     width: 100px;
     height: 52px;
@@ -949,11 +996,11 @@ responsive
     border: none;
     box-shadow: -4px 3px 0px 0px #f6f3e7;
     cursor: pointer;
-    transition: 0.3s;
+    transition: .3s;
   }
   .c-form__submit button:hover {
-    transform: translate(4px, 3px);
-    box-shadow: 0px 0px 0px 0px #f6f3e7;
+    transform: translate(-4px, 3px);
+    box-shadow: 0 0 0 0 #f6f3e7;
   }
 
 
@@ -986,5 +1033,17 @@ responsive
     bottom: 9px;
     z-index: 1000; /* 他の要素より前に出す */
     transform: translateY(6px);
+  }
+}
+
+.wave-sp {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .wave-pc {
+    display: none;
+  }
+  .wave-sp {
+    display: block;
   }
 }

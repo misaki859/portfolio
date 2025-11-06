@@ -116,9 +116,103 @@
           </div>
         </div>
       </section>
-      <div class="wave">
-        <img class="ship" src="./images/ship.png" alt="" />
-        <img class="wave-blue" src="./images/wave.png" alt="" />
+      <div class="wave-pc">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1280 100"
+          width="100%"
+          overflow="visible"
+        >
+          <defs>
+            <!-- 船が通る“見えないレール”（波の上端だけ） -->
+            <path
+              id="wavePath"
+              d="M -187.73333333333335 37
+           Q -134.4 37 -81.07 68.5
+           Q 25.6 131.5 132.27 68.5
+           Q 185.6 37 238.93 37
+           Q 292.27 37 345.6 68.5
+           Q 452.27 131.5 558.93 68.5
+           Q 612.27 37 665.6 37
+           Q 718.93 37 772.27 68.5
+           Q 878.93 131.5 985.6 68.5
+           Q 1038.93 37 1092.27 37
+           Q 1145.6 37 1198.93 68.5
+           Q 1305.6 131.5 1412.27 68.5
+           Q 1465.6 37 1518.93 37"
+              fill="none"
+              stroke="transparent"
+            />
+          </defs>
+
+          <!-- 見える波（SVGそのまま） -->
+          <path
+            d="M -187.73333333333335 37 Q -134.4 37 -81.07 68.5 Q 25.6 131.5 132.27 68.5 Q 185.6 37 238.93 37 Q 292.27 37 345.6 68.5 Q 452.27 131.5 558.93 68.5 Q 612.27 37 665.6 37 Q 718.93 37 772.27 68.5 Q 878.93 131.5 985.6 68.5 Q 1038.93 37 1092.27 37 Q 1145.6 37 1198.93 68.5 Q 1305.6 131.5 1412.27 68.5 Q 1465.6 37 1518.93 37 L 1280 0 L 0 0 Z"
+            fill="#2e659e"
+          />
+
+          <!-- 船 -->
+          <image
+            href="./images/ship.png"
+            width="110"
+            height="70"
+            transform="translate(0,-70) scale(-1.5,1.5)"
+          >
+            <!-- 左→右にパス順で進む。速度は dur を調整 -->
+            <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
+              <mpath href="#wavePath" />
+            </animateMotion>
+          </image>
+        </svg>
+      </div>
+      <div class="wave-sp">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1280 100"
+          width="100%"
+          overflow="visible"
+        >
+          <defs>
+            <!-- 船が通る“見えないレール”（波の上端だけ） -->
+            <path
+              id="wavePath-sp"
+              d="M -187.73333333333335 37
+           Q -134.4 37 -81.07 68.5
+           Q 25.6 131.5 132.27 68.5
+           Q 185.6 37 238.93 37
+           Q 292.27 37 345.6 68.5
+           Q 452.27 131.5 558.93 68.5
+           Q 612.27 37 665.6 37
+           Q 718.93 37 772.27 68.5
+           Q 878.93 131.5 985.6 68.5
+           Q 1038.93 37 1092.27 37
+           Q 1145.6 37 1198.93 68.5
+           Q 1305.6 131.5 1412.27 68.5
+           Q 1465.6 37 1518.93 37"
+              fill="none"
+              stroke="transparent"
+            />
+          </defs>
+
+          <!-- 見える波（SVGそのまま） -->
+          <path
+            d="M -187.73333333333335 37 Q -134.4 37 -81.07 68.5 Q 25.6 131.5 132.27 68.5 Q 185.6 37 238.93 37 Q 292.27 37 345.6 68.5 Q 452.27 131.5 558.93 68.5 Q 612.27 37 665.6 37 Q 718.93 37 772.27 68.5 Q 878.93 131.5 985.6 68.5 Q 1038.93 37 1092.27 37 Q 1145.6 37 1198.93 68.5 Q 1305.6 131.5 1412.27 68.5 Q 1465.6 37 1518.93 37 L 1280 0 L 0 0 Z"
+            fill="#2e659e"
+          />
+
+          <!-- 船 -->
+          <image
+            href="./images/ship.png"
+            width="110"
+            height="70"
+            transform="translate(0,-120) scale(-2.8,2.8)"
+          >
+            <!-- 左→右にパス順で進む。速度は dur を調整 -->
+            <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
+              <mpath href="#wavePath-sp" />
+            </animateMotion>
+          </image>
+        </svg>
       </div>
 
       <!-- Works -->
@@ -214,14 +308,14 @@
               </label>
               <p><a href="https://www.instagram.com/_capescape_/" target="_blank">[ @_capescape_ ]</a></p>
             </div>
-            <div class="c-form__item--sp">
+            <div class="c-form__item--sp form-instagram">
               <label class="c-form__label" for="field-name"
-                ><div class="form__label-inner">
+                ><div class="form__label-inner insta">
                   <span class="label--ja">インスタグラム</span>
                   <span class="label--en">Instagram</span>
                 </div></label
               >
-              <p><a href="https://www.instagram.com/_capescape_/" target="_blank">[ @_capescape_ ]</a></p>
+              <p class="instagram-id"><a href="https://www.instagram.com/_capescape_/" target="_blank">[ @_capescape_ ]</a></p>
             </div>            
             <div class="c-form__item">
               <label class="c-form__label" for="field-mail"
